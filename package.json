@@ -1,0 +1,25 @@
+{
+  "name": "php-semantic-parser",
+  "version": "0.1.0",
+  "description": "Parse PHP scripts to discover unannotated behaviours",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jj101k/php-semantic-parser.git"
+  },
+  "scripts": {
+    "test": "node test"
+  },
+  "keywords": [
+    "php"
+  ],
+  "author": "Jim Driscoll",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/jj101k/php-semantic-parser/issues"
+  },
+  "homepage": "https://github.com/jj101k/php-semantic-parser#readme",
+  "dependencies": {
+    "eximport": "^1.1.3"
+  }
+}
