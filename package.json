@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/jj101k/php-semantic-parser#readme",
   "dependencies": {
-    "eximport": "^1.1.3"
+    "eximport": "^2.0.0"
   }
 }
