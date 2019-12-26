@@ -1,5 +1,8 @@
 # php-semantic-parser
+
 Parse PHP scripts to discover unannotated behaviours
+
+## Description
 
 The rationale here is that extracting the semantics requires walking the file -
 and only once - to build a semantic tree rather than an AST, and while
@@ -27,3 +30,8 @@ This reads the code left-to-right to see what's there; while there are context
 changes which affect what's expected next, there isn't a tree in any sense until
 an atomic element is complete because, for example, `$x++` is an _increment_
 operarion _containing_ `$x`, not the other way around.
+
+## Options
+
+If you set the environment variable "debug", all the tokens found by the lexer
+will be dumped.
