@@ -2,11 +2,21 @@
 const assert = require("assert")
 const child_process = require("child_process")
 const fs = require("fs")
+const crypto = require("crypto")
 const PHPSemanticParser = require("../index")
 
 const paths = process.argv.slice(2)
 if(!paths.length) {
     throw new Error("Too few arguments")
+}
+
+let ignore
+
+// Sometimes, a PHP file (often in a test) is supposed to fail. If so, put its sha1 in this file.
+if(fs.existsSync("batch-test-data/ignore.json")) {
+    ignore = JSON.parse(fs.readFileSync("batch-test-data/ignore.json", {encoding: "utf8"}))
+} else {
+    ignore = []
 }
 
 child_process.exec(`find ${paths.map(s => JSON.stringify(s)).join(" ")} -name '*.php'`, {}, (e, out, err) => {
@@ -18,6 +28,12 @@ child_process.exec(`find ${paths.map(s => JSON.stringify(s)).join(" ")} -name '*
             process.stdout.write(`\r[${display_n.padStart(fl.length)}/${fl}]`)
             try {
                 const simple_test = fs.readFileSync(filename, {encoding: "utf8"})
+                if(ignore.length) {
+                    const hash = crypto.createHash("sha1").update(simple_test).digest("hex")
+                    if(ignore.includes(hash)) {
+                        continue
+                    }
+                }
                 const p2 = new PHPSemanticParser(simple_test)
                 assert.ok(p2.parse(), "Parse works")
             } catch(e) {
