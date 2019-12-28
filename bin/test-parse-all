@@ -1,7 +1,22 @@
-#!/bin/sh
-i=0
-find "$@" -name '*.php' | while read f; do
-	((i=i+1))
-	echo -n "\r[$i] $f "
-	./bin/test-parse "$f" || break
-done
+#!/usr/bin/env node
+const assert = require("assert")
+const child_process = require("child_process")
+const fs = require("fs")
+const PHPSemanticParser = require("../index")
+
+const paths = process.argv.slice(2)
+if(!paths.length) {
+    throw new Error("Too few arguments")
+}
+
+child_process.exec(`find ${paths.map(s => JSON.stringify(s)).join(" ")} -name '*.php'`, {}, (e, out, err) => {
+    if(!e) {
+        const files = out.replace(/\n$/, "").split(/\n/)
+        for(const [i, filename] of Object.entries(files)) {
+            process.stdout.write(`\r[${i}] ${filename} `)
+            const simple_test = fs.readFileSync(filename, {encoding: "utf8"})
+            const p2 = new PHPSemanticParser(simple_test)
+            assert.ok(p2.parse(), "Parse works")
+        }
+    }
+})
