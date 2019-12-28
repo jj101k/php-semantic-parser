@@ -15,10 +15,15 @@ child_process.exec(`find ${paths.map(s => JSON.stringify(s)).join(" ")} -name '*
         const fl = "" + files.length
         for(const [i, filename] of Object.entries(files)) {
             const display_n = "" + (+i+1)
-            process.stdout.write(`\r[${display_n.padStart(fl.length)}/${fl}] ${filename} `)
-            const simple_test = fs.readFileSync(filename, {encoding: "utf8"})
-            const p2 = new PHPSemanticParser(simple_test)
-            assert.ok(p2.parse(), "Parse works")
+            process.stdout.write(`\r[${display_n.padStart(fl.length)}/${fl}]`)
+            try {
+                const simple_test = fs.readFileSync(filename, {encoding: "utf8"})
+                const p2 = new PHPSemanticParser(simple_test)
+                assert.ok(p2.parse(), "Parse works")
+            } catch(e) {
+                console.log(`Failed at: ${filename}`)
+                throw e
+            }
         }
     }
 })
