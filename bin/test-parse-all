@@ -19,7 +19,9 @@ if(fs.existsSync("batch-test-data/ignore.json")) {
     ignore = []
 }
 
-child_process.exec(`find ${paths.map(s => JSON.stringify(s)).join(" ")} -name '*.php'`, {}, (e, out, err) => {
+child_process.exec(`find ${paths.map(s => JSON.stringify(s)).join(" ")} -name '*.php'`, {
+    maxBuffer: 100 * 1024 * 1024,
+}, (e, out, err) => {
     if(e) {
         console.log(e)
     } else {
