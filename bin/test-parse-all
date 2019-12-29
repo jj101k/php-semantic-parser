@@ -13,8 +13,8 @@ if(!paths.length) {
 let ignore
 
 // Sometimes, a PHP file (often in a test) is supposed to fail. If so, put its sha1 in this file.
-if(fs.existsSync("batch-test-data/ignore.json")) {
-    ignore = JSON.parse(fs.readFileSync("batch-test-data/ignore.json", {encoding: "utf8"}))
+if(fs.existsSync(`${__dirname}/../batch-test-data/ignore.json`)) {
+    ignore = JSON.parse(fs.readFileSync(`${__dirname}/../batch-test-data/ignore.json`, {encoding: "utf8"}))
 } else {
     ignore = []
 }
