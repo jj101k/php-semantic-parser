@@ -20,7 +20,9 @@ if(fs.existsSync("batch-test-data/ignore.json")) {
 }
 
 child_process.exec(`find ${paths.map(s => JSON.stringify(s)).join(" ")} -name '*.php'`, {}, (e, out, err) => {
-    if(!e) {
+    if(e) {
+        console.log(e)
+    } else {
         const files = out.replace(/\n$/, "").split(/\n/)
         const fl = "" + files.length
         for(const [i, filename] of Object.entries(files)) {
