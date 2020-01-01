@@ -32,14 +32,12 @@ child_process.exec(`find ${paths.map(s => JSON.stringify(s)).join(" ")} -name '*
             process.stdout.write(`\r[${display_n.padStart(fl.length)}/${fl}]`)
             try {
                 const simple_test = fs.readFileSync(filename, {encoding: "utf8"})
-                if(ignore.length) {
-                    const hash = crypto.createHash("sha1").update(simple_test).digest("hex")
-                    if(ignore.includes(hash)) {
-                        continue
-                    }
+                const hash = crypto.createHash("sha1").update(simple_test).digest("hex")
+                if(!ignore.includes(hash)) {
+                    ignore.push(hash)
+                    const p2 = new PHPSemanticParser(simple_test)
+                    assert.ok(p2.parse(), "Parse works")
                 }
-                const p2 = new PHPSemanticParser(simple_test)
-                assert.ok(p2.parse(), "Parse works")
             } catch(e) {
                 console.log(`Failed at: ${filename}`)
                 throw e
