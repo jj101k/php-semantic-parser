@@ -1,11 +1,23 @@
 #!/usr/bin/env node
 const assert = require("assert")
 const child_process = require("child_process")
-const fs = require("fs")
 const crypto = require("crypto")
+const fs = require("fs")
+const getopts = require("getopts")
 const PHPSemanticParser = require("../index")
 
-const paths = process.argv.slice(2)
+const options = getopts(
+    process.argv.slice(2),
+    {
+        alias: {
+            skip: "s",
+        },
+        default: {
+            skip: 0,
+        },
+    }
+)
+const paths = options._
 if(!paths.length) {
     throw new Error("Too few arguments")
 }
@@ -28,6 +40,7 @@ child_process.exec(`find ${paths.map(s => JSON.stringify(s)).join(" ")} -name '*
         const files = out.replace(/\n$/, "").split(/\n/)
         const fl = "" + files.length
         for(const [i, filename] of Object.entries(files)) {
+            if(i < options.skip) continue
             const display_n = "" + (+i+1)
             process.stdout.write(`\r[${display_n.padStart(fl.length)}/${fl}]`)
             try {

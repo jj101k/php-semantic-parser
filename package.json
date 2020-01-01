@@ -21,5 +21,8 @@
   "homepage": "https://github.com/jj101k/php-semantic-parser#readme",
   "dependencies": {
     "eximport": "^2.0.0"
+  },
+  "devDependencies": {
+    "getopts": "^2.2.5"
   }
 }
