@@ -18,4 +18,4 @@ print json_encode(array_combine(
             ),
         ];
     }, $names)
-), JSON_PRETTY_PRINT);
+), JSON_UNESCAPED_SLASHES);

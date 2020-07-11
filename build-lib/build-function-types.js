@@ -1,6 +1,7 @@
 const fs = require("fs")
 const htmlparser = require("node-html-parser")
 const data = fs.readFileSync("data-in/php-bigxhtml.html", "utf8")
+const zlib = require("zlib")
 
 /**
  * @typedef {{byReference: boolean, defaultValue: ?string, name: string, optionalDepth: number, type: ?string}} arg_out
@@ -170,6 +171,6 @@ for(const part of dom.querySelectorAll(".refentry")) {
 	}
 }
 fs.writeFileSync(
-    "data/php-function-types.json",
-    JSON.stringify(function_types, undefined, 4)
+	"data/php-function-types.json.gz",
+	zlib.gzipSync(JSON.stringify(function_types))
 )

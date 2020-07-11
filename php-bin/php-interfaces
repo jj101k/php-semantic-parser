@@ -58,4 +58,4 @@ foreach($interfaces as $interface) {
         null;
     $out[$interface] = $info;
 }
-print json_encode($out, JSON_PRETTY_PRINT);
+print json_encode($out, JSON_UNESCAPED_SLASHES);
