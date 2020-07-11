@@ -8,4 +8,4 @@ const PHPSemanticParser = require("../index")
 
 const simple_test = fs.readFileSync(process.argv[2], {encoding: "utf8"})
 const p2 = new PHPSemanticParser(simple_test)
-assert.ok(p2.parse(), "Parse works")
+assert.ok(p2.parse(process.argv[2]), "Parse works")
