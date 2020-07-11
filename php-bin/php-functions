@@ -1,0 +1,21 @@
+#!/usr/bin/env php
+<?php
+$names = get_defined_functions()["internal"];
+sort($names);
+print json_encode(array_combine(
+    $names,
+    array_map(function($n) {
+        $rf = new ReflectionFunction($n);
+        return [
+            "arguments" => array_map(
+                function($p) {
+                    return [
+                        "optional" => $p->isOptional(),
+                        "pbr" => $p->isPassedByReference(),
+                    ];
+                },
+                $rf->getParameters()
+            ),
+        ];
+    }, $names)
+), JSON_PRETTY_PRINT);
