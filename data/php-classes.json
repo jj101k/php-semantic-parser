@@ -362,9 +362,6 @@
                     },
                     {
                         "type": null
-                    },
-                    {
-                        "type": null
                     }
                 ],
                 "returnType": null
@@ -1804,11 +1801,140 @@
                     }
                 ],
                 "returnType": null
+            },
+            {
+                "name": "__invoke",
+                "isAbstract": false,
+                "isPublic": true,
+                "isStatic": false,
+                "arguments": [],
+                "returnType": null
             }
         ],
         "properties": [],
         "interfaces": [],
         "parentClass": null
+    },
+    "CompileError": {
+        "constants": [],
+        "methods": [
+            {
+                "name": "__construct",
+                "isAbstract": false,
+                "isPublic": true,
+                "isStatic": false,
+                "arguments": [
+                    {
+                        "type": null
+                    },
+                    {
+                        "type": null
+                    },
+                    {
+                        "type": null
+                    }
+                ],
+                "returnType": null
+            },
+            {
+                "name": "__wakeup",
+                "isAbstract": false,
+                "isPublic": true,
+                "isStatic": false,
+                "arguments": [],
+                "returnType": null
+            },
+            {
+                "name": "getMessage",
+                "isAbstract": false,
+                "isPublic": true,
+                "isStatic": false,
+                "arguments": [],
+                "returnType": null
+            },
+            {
+                "name": "getCode",
+                "isAbstract": false,
+                "isPublic": true,
+                "isStatic": false,
+                "arguments": [],
+                "returnType": null
+            },
+            {
+                "name": "getFile",
+                "isAbstract": false,
+                "isPublic": true,
+                "isStatic": false,
+                "arguments": [],
+                "returnType": null
+            },
+            {
+                "name": "getLine",
+                "isAbstract": false,
+                "isPublic": true,
+                "isStatic": false,
+                "arguments": [],
+                "returnType": null
+            },
+            {
+                "name": "getTrace",
+                "isAbstract": false,
+                "isPublic": true,
+                "isStatic": false,
+                "arguments": [],
+                "returnType": null
+            },
+            {
+                "name": "getPrevious",
+                "isAbstract": false,
+                "isPublic": true,
+                "isStatic": false,
+                "arguments": [],
+                "returnType": null
+            },
+            {
+                "name": "getTraceAsString",
+                "isAbstract": false,
+                "isPublic": true,
+                "isStatic": false,
+                "arguments": [],
+                "returnType": null
+            },
+            {
+                "name": "__toString",
+                "isAbstract": false,
+                "isPublic": true,
+                "isStatic": false,
+                "arguments": [],
+                "returnType": null
+            }
+        ],
+        "properties": [
+            {
+                "name": "message",
+                "isPublic": false,
+                "isStatic": false
+            },
+            {
+                "name": "code",
+                "isPublic": false,
+                "isStatic": false
+            },
+            {
+                "name": "file",
+                "isPublic": false,
+                "isStatic": false
+            },
+            {
+                "name": "line",
+                "isPublic": false,
+                "isStatic": false
+            }
+        ],
+        "interfaces": [
+            "Throwable"
+        ],
+        "parentClass": "Error"
     },
     "DOMAttr": {
         "constants": [],
@@ -6217,11 +6343,20 @@
                     }
                 ],
                 "returnType": null
+            },
+            {
+                "name": "count",
+                "isAbstract": false,
+                "isPublic": true,
+                "isStatic": false,
+                "arguments": [],
+                "returnType": null
             }
         ],
         "properties": [],
         "interfaces": [
-            "Traversable"
+            "Traversable",
+            "Countable"
         ],
         "parentClass": null
     },
@@ -6530,11 +6665,20 @@
                     }
                 ],
                 "returnType": null
+            },
+            {
+                "name": "count",
+                "isAbstract": false,
+                "isPublic": true,
+                "isStatic": false,
+                "arguments": [],
+                "returnType": null
             }
         ],
         "properties": [],
         "interfaces": [
-            "Traversable"
+            "Traversable",
+            "Countable"
         ],
         "parentClass": null
     },
@@ -7735,7 +7879,11 @@
                 "isAbstract": false,
                 "isPublic": true,
                 "isStatic": true,
-                "arguments": [],
+                "arguments": [
+                    {
+                        "type": "array"
+                    }
+                ],
                 "returnType": null
             },
             {
@@ -7807,7 +7955,11 @@
                 "isAbstract": false,
                 "isPublic": true,
                 "isStatic": true,
-                "arguments": [],
+                "arguments": [
+                    {
+                        "type": "array"
+                    }
+                ],
                 "returnType": null
             },
             {
@@ -7828,6 +7980,14 @@
             },
             {
                 "name": "getDateInterval",
+                "isAbstract": false,
+                "isPublic": true,
+                "isStatic": false,
+                "arguments": [],
+                "returnType": null
+            },
+            {
+                "name": "getRecurrences",
                 "isAbstract": false,
                 "isPublic": true,
                 "isStatic": false,
@@ -7938,7 +8098,23 @@
                 "isAbstract": false,
                 "isPublic": true,
                 "isStatic": true,
-                "arguments": [],
+                "arguments": [
+                    {
+                        "type": "array"
+                    }
+                ],
+                "returnType": null
+            },
+            {
+                "name": "createFromImmutable",
+                "isAbstract": false,
+                "isPublic": true,
+                "isStatic": true,
+                "arguments": [
+                    {
+                        "type": null
+                    }
+                ],
                 "returnType": null
             },
             {
@@ -7954,7 +8130,7 @@
                         "type": null
                     },
                     {
-                        "type": null
+                        "type": "DateTimeZone"
                     }
                 ],
                 "returnType": null
@@ -8143,7 +8319,73 @@
         "parentClass": null
     },
     "DateTimeImmutable": {
-        "constants": [],
+        "constants": [
+            {
+                "name": "ATOM",
+                "isPublic": true,
+                "value": "Y-m-d\\TH:i:sP"
+            },
+            {
+                "name": "COOKIE",
+                "isPublic": true,
+                "value": "l, d-M-Y H:i:s T"
+            },
+            {
+                "name": "ISO8601",
+                "isPublic": true,
+                "value": "Y-m-d\\TH:i:sO"
+            },
+            {
+                "name": "RFC822",
+                "isPublic": true,
+                "value": "D, d M y H:i:s O"
+            },
+            {
+                "name": "RFC850",
+                "isPublic": true,
+                "value": "l, d-M-y H:i:s T"
+            },
+            {
+                "name": "RFC1036",
+                "isPublic": true,
+                "value": "D, d M y H:i:s O"
+            },
+            {
+                "name": "RFC1123",
+                "isPublic": true,
+                "value": "D, d M Y H:i:s O"
+            },
+            {
+                "name": "RFC7231",
+                "isPublic": true,
+                "value": "D, d M Y H:i:s \\G\\M\\T"
+            },
+            {
+                "name": "RFC2822",
+                "isPublic": true,
+                "value": "D, d M Y H:i:s O"
+            },
+            {
+                "name": "RFC3339",
+                "isPublic": true,
+                "value": "Y-m-d\\TH:i:sP"
+            },
+            {
+                "name": "RFC3339_EXTENDED",
+                "isPublic": true,
+                "value": "Y-m-d\\TH:i:s.vP"
+            },
+            {
+                "name": "RSS",
+                "isPublic": true,
+                "value": "D, d M Y H:i:s O"
+            },
+            {
+                "name": "W3C",
+                "isPublic": true,
+                "value": "Y-m-d\\TH:i:sP"
+            }
+        ],
         "methods": [
             {
                 "name": "__construct",
@@ -8173,7 +8415,11 @@
                 "isAbstract": false,
                 "isPublic": true,
                 "isStatic": true,
-                "arguments": [],
+                "arguments": [
+                    {
+                        "type": "array"
+                    }
+                ],
                 "returnType": null
             },
             {
@@ -8189,7 +8435,7 @@
                         "type": null
                     },
                     {
-                        "type": null
+                        "type": "DateTimeZone"
                     }
                 ],
                 "returnType": null
@@ -8488,7 +8734,11 @@
                 "isAbstract": false,
                 "isPublic": true,
                 "isStatic": true,
-                "arguments": [],
+                "arguments": [
+                    {
+                        "type": "array"
+                    }
+                ],
                 "returnType": null
             },
             {
@@ -10670,6 +10920,13 @@
         ],
         "parentClass": "FilesystemIterator"
     },
+    "HashContext": {
+        "constants": [],
+        "methods": [],
+        "properties": [],
+        "interfaces": [],
+        "parentClass": null
+    },
     "InfiniteIterator": {
         "constants": [],
         "methods": [
@@ -10934,6 +11191,127 @@
             "OuterIterator"
         ],
         "parentClass": null
+    },
+    "JsonException": {
+        "constants": [],
+        "methods": [
+            {
+                "name": "__construct",
+                "isAbstract": false,
+                "isPublic": true,
+                "isStatic": false,
+                "arguments": [
+                    {
+                        "type": null
+                    },
+                    {
+                        "type": null
+                    },
+                    {
+                        "type": null
+                    }
+                ],
+                "returnType": null
+            },
+            {
+                "name": "__wakeup",
+                "isAbstract": false,
+                "isPublic": true,
+                "isStatic": false,
+                "arguments": [],
+                "returnType": null
+            },
+            {
+                "name": "getMessage",
+                "isAbstract": false,
+                "isPublic": true,
+                "isStatic": false,
+                "arguments": [],
+                "returnType": null
+            },
+            {
+                "name": "getCode",
+                "isAbstract": false,
+                "isPublic": true,
+                "isStatic": false,
+                "arguments": [],
+                "returnType": null
+            },
+            {
+                "name": "getFile",
+                "isAbstract": false,
+                "isPublic": true,
+                "isStatic": false,
+                "arguments": [],
+                "returnType": null
+            },
+            {
+                "name": "getLine",
+                "isAbstract": false,
+                "isPublic": true,
+                "isStatic": false,
+                "arguments": [],
+                "returnType": null
+            },
+            {
+                "name": "getTrace",
+                "isAbstract": false,
+                "isPublic": true,
+                "isStatic": false,
+                "arguments": [],
+                "returnType": null
+            },
+            {
+                "name": "getPrevious",
+                "isAbstract": false,
+                "isPublic": true,
+                "isStatic": false,
+                "arguments": [],
+                "returnType": null
+            },
+            {
+                "name": "getTraceAsString",
+                "isAbstract": false,
+                "isPublic": true,
+                "isStatic": false,
+                "arguments": [],
+                "returnType": null
+            },
+            {
+                "name": "__toString",
+                "isAbstract": false,
+                "isPublic": true,
+                "isStatic": false,
+                "arguments": [],
+                "returnType": null
+            }
+        ],
+        "properties": [
+            {
+                "name": "message",
+                "isPublic": false,
+                "isStatic": false
+            },
+            {
+                "name": "code",
+                "isPublic": false,
+                "isStatic": false
+            },
+            {
+                "name": "file",
+                "isPublic": false,
+                "isStatic": false
+            },
+            {
+                "name": "line",
+                "isPublic": false,
+                "isStatic": false
+            }
+        ],
+        "interfaces": [
+            "Throwable"
+        ],
+        "parentClass": "Exception"
     },
     "LengthException": {
         "constants": [],
@@ -11906,6 +12284,16 @@
                 "value": 2147483648
             },
             {
+                "name": "PARAM_STR_NATL",
+                "isPublic": true,
+                "value": 1073741824
+            },
+            {
+                "name": "PARAM_STR_CHAR",
+                "isPublic": true,
+                "value": 536870912
+            },
+            {
                 "name": "PARAM_EVT_ALLOC",
                 "isPublic": true,
                 "value": 0
@@ -12131,6 +12519,11 @@
                 "value": 19
             },
             {
+                "name": "ATTR_DEFAULT_STR_PARAM",
+                "isPublic": true,
+                "value": 21
+            },
+            {
                 "name": "ERRMODE_SILENT",
                 "isPublic": true,
                 "value": 0
@@ -12329,6 +12722,26 @@
                 "name": "SQLITE_DETERMINISTIC",
                 "isPublic": true,
                 "value": 2048
+            },
+            {
+                "name": "SQLITE_ATTR_OPEN_FLAGS",
+                "isPublic": true,
+                "value": 1000
+            },
+            {
+                "name": "SQLITE_OPEN_READONLY",
+                "isPublic": true,
+                "value": 1
+            },
+            {
+                "name": "SQLITE_OPEN_READWRITE",
+                "isPublic": true,
+                "value": 2
+            },
+            {
+                "name": "SQLITE_OPEN_CREATE",
+                "isPublic": true,
+                "value": 4
             }
         ],
         "methods": [
@@ -13151,7 +13564,7 @@
         "interfaces": [
             "Throwable"
         ],
-        "parentClass": "Error"
+        "parentClass": "CompileError"
     },
     "Phar": {
         "constants": [
@@ -16130,9 +16543,6 @@
                     },
                     {
                         "type": null
-                    },
-                    {
-                        "type": null
                     }
                 ],
                 "returnType": null
@@ -17900,7 +18310,11 @@
                 "isAbstract": false,
                 "isPublic": true,
                 "isStatic": false,
-                "arguments": [],
+                "arguments": [
+                    {
+                        "type": null
+                    }
+                ],
                 "returnType": null
             },
             {
@@ -18453,6 +18867,14 @@
             },
             {
                 "name": "getDefaultProperties",
+                "isAbstract": false,
+                "isPublic": true,
+                "isStatic": false,
+                "arguments": [],
+                "returnType": null
+            },
+            {
+                "name": "isIterable",
                 "isAbstract": false,
                 "isPublic": true,
                 "isStatic": false,
@@ -20451,6 +20873,14 @@
                 "returnType": null
             },
             {
+                "name": "isIterable",
+                "isAbstract": false,
+                "isPublic": true,
+                "isStatic": false,
+                "arguments": [],
+                "returnType": null
+            },
+            {
                 "name": "isIterateable",
                 "isAbstract": false,
                 "isPublic": true,
@@ -21920,6 +22350,9 @@
                 "isPublic": true,
                 "isStatic": false,
                 "arguments": [
+                    {
+                        "type": null
+                    },
                     {
                         "type": null
                     },
@@ -28020,938 +28453,6 @@
         "interfaces": [],
         "parentClass": null
     },
-    "ZipArchive": {
-        "constants": [
-            {
-                "name": "CREATE",
-                "isPublic": true,
-                "value": 1
-            },
-            {
-                "name": "EXCL",
-                "isPublic": true,
-                "value": 2
-            },
-            {
-                "name": "CHECKCONS",
-                "isPublic": true,
-                "value": 4
-            },
-            {
-                "name": "OVERWRITE",
-                "isPublic": true,
-                "value": 8
-            },
-            {
-                "name": "FL_NOCASE",
-                "isPublic": true,
-                "value": 1
-            },
-            {
-                "name": "FL_NODIR",
-                "isPublic": true,
-                "value": 2
-            },
-            {
-                "name": "FL_COMPRESSED",
-                "isPublic": true,
-                "value": 4
-            },
-            {
-                "name": "FL_UNCHANGED",
-                "isPublic": true,
-                "value": 8
-            },
-            {
-                "name": "FL_ENC_GUESS",
-                "isPublic": true,
-                "value": 0
-            },
-            {
-                "name": "FL_ENC_RAW",
-                "isPublic": true,
-                "value": 64
-            },
-            {
-                "name": "FL_ENC_STRICT",
-                "isPublic": true,
-                "value": 128
-            },
-            {
-                "name": "FL_ENC_UTF_8",
-                "isPublic": true,
-                "value": 2048
-            },
-            {
-                "name": "FL_ENC_CP437",
-                "isPublic": true,
-                "value": 4096
-            },
-            {
-                "name": "CM_DEFAULT",
-                "isPublic": true,
-                "value": -1
-            },
-            {
-                "name": "CM_STORE",
-                "isPublic": true,
-                "value": 0
-            },
-            {
-                "name": "CM_SHRINK",
-                "isPublic": true,
-                "value": 1
-            },
-            {
-                "name": "CM_REDUCE_1",
-                "isPublic": true,
-                "value": 2
-            },
-            {
-                "name": "CM_REDUCE_2",
-                "isPublic": true,
-                "value": 3
-            },
-            {
-                "name": "CM_REDUCE_3",
-                "isPublic": true,
-                "value": 4
-            },
-            {
-                "name": "CM_REDUCE_4",
-                "isPublic": true,
-                "value": 5
-            },
-            {
-                "name": "CM_IMPLODE",
-                "isPublic": true,
-                "value": 6
-            },
-            {
-                "name": "CM_DEFLATE",
-                "isPublic": true,
-                "value": 8
-            },
-            {
-                "name": "CM_DEFLATE64",
-                "isPublic": true,
-                "value": 9
-            },
-            {
-                "name": "CM_PKWARE_IMPLODE",
-                "isPublic": true,
-                "value": 10
-            },
-            {
-                "name": "CM_BZIP2",
-                "isPublic": true,
-                "value": 12
-            },
-            {
-                "name": "CM_LZMA",
-                "isPublic": true,
-                "value": 14
-            },
-            {
-                "name": "CM_TERSE",
-                "isPublic": true,
-                "value": 18
-            },
-            {
-                "name": "CM_LZ77",
-                "isPublic": true,
-                "value": 19
-            },
-            {
-                "name": "CM_WAVPACK",
-                "isPublic": true,
-                "value": 97
-            },
-            {
-                "name": "CM_PPMD",
-                "isPublic": true,
-                "value": 98
-            },
-            {
-                "name": "ER_OK",
-                "isPublic": true,
-                "value": 0
-            },
-            {
-                "name": "ER_MULTIDISK",
-                "isPublic": true,
-                "value": 1
-            },
-            {
-                "name": "ER_RENAME",
-                "isPublic": true,
-                "value": 2
-            },
-            {
-                "name": "ER_CLOSE",
-                "isPublic": true,
-                "value": 3
-            },
-            {
-                "name": "ER_SEEK",
-                "isPublic": true,
-                "value": 4
-            },
-            {
-                "name": "ER_READ",
-                "isPublic": true,
-                "value": 5
-            },
-            {
-                "name": "ER_WRITE",
-                "isPublic": true,
-                "value": 6
-            },
-            {
-                "name": "ER_CRC",
-                "isPublic": true,
-                "value": 7
-            },
-            {
-                "name": "ER_ZIPCLOSED",
-                "isPublic": true,
-                "value": 8
-            },
-            {
-                "name": "ER_NOENT",
-                "isPublic": true,
-                "value": 9
-            },
-            {
-                "name": "ER_EXISTS",
-                "isPublic": true,
-                "value": 10
-            },
-            {
-                "name": "ER_OPEN",
-                "isPublic": true,
-                "value": 11
-            },
-            {
-                "name": "ER_TMPOPEN",
-                "isPublic": true,
-                "value": 12
-            },
-            {
-                "name": "ER_ZLIB",
-                "isPublic": true,
-                "value": 13
-            },
-            {
-                "name": "ER_MEMORY",
-                "isPublic": true,
-                "value": 14
-            },
-            {
-                "name": "ER_CHANGED",
-                "isPublic": true,
-                "value": 15
-            },
-            {
-                "name": "ER_COMPNOTSUPP",
-                "isPublic": true,
-                "value": 16
-            },
-            {
-                "name": "ER_EOF",
-                "isPublic": true,
-                "value": 17
-            },
-            {
-                "name": "ER_INVAL",
-                "isPublic": true,
-                "value": 18
-            },
-            {
-                "name": "ER_NOZIP",
-                "isPublic": true,
-                "value": 19
-            },
-            {
-                "name": "ER_INTERNAL",
-                "isPublic": true,
-                "value": 20
-            },
-            {
-                "name": "ER_INCONS",
-                "isPublic": true,
-                "value": 21
-            },
-            {
-                "name": "ER_REMOVE",
-                "isPublic": true,
-                "value": 22
-            },
-            {
-                "name": "ER_DELETED",
-                "isPublic": true,
-                "value": 23
-            },
-            {
-                "name": "OPSYS_DOS",
-                "isPublic": true,
-                "value": 0
-            },
-            {
-                "name": "OPSYS_AMIGA",
-                "isPublic": true,
-                "value": 1
-            },
-            {
-                "name": "OPSYS_OPENVMS",
-                "isPublic": true,
-                "value": 2
-            },
-            {
-                "name": "OPSYS_UNIX",
-                "isPublic": true,
-                "value": 3
-            },
-            {
-                "name": "OPSYS_VM_CMS",
-                "isPublic": true,
-                "value": 4
-            },
-            {
-                "name": "OPSYS_ATARI_ST",
-                "isPublic": true,
-                "value": 5
-            },
-            {
-                "name": "OPSYS_OS_2",
-                "isPublic": true,
-                "value": 6
-            },
-            {
-                "name": "OPSYS_MACINTOSH",
-                "isPublic": true,
-                "value": 7
-            },
-            {
-                "name": "OPSYS_Z_SYSTEM",
-                "isPublic": true,
-                "value": 8
-            },
-            {
-                "name": "OPSYS_Z_CPM",
-                "isPublic": true,
-                "value": 9
-            },
-            {
-                "name": "OPSYS_WINDOWS_NTFS",
-                "isPublic": true,
-                "value": 10
-            },
-            {
-                "name": "OPSYS_MVS",
-                "isPublic": true,
-                "value": 11
-            },
-            {
-                "name": "OPSYS_VSE",
-                "isPublic": true,
-                "value": 12
-            },
-            {
-                "name": "OPSYS_ACORN_RISC",
-                "isPublic": true,
-                "value": 13
-            },
-            {
-                "name": "OPSYS_VFAT",
-                "isPublic": true,
-                "value": 14
-            },
-            {
-                "name": "OPSYS_ALTERNATE_MVS",
-                "isPublic": true,
-                "value": 15
-            },
-            {
-                "name": "OPSYS_BEOS",
-                "isPublic": true,
-                "value": 16
-            },
-            {
-                "name": "OPSYS_TANDEM",
-                "isPublic": true,
-                "value": 17
-            },
-            {
-                "name": "OPSYS_OS_400",
-                "isPublic": true,
-                "value": 18
-            },
-            {
-                "name": "OPSYS_OS_X",
-                "isPublic": true,
-                "value": 19
-            },
-            {
-                "name": "OPSYS_DEFAULT",
-                "isPublic": true,
-                "value": 3
-            }
-        ],
-        "methods": [
-            {
-                "name": "open",
-                "isAbstract": false,
-                "isPublic": true,
-                "isStatic": false,
-                "arguments": [
-                    {
-                        "type": null
-                    },
-                    {
-                        "type": null
-                    }
-                ],
-                "returnType": null
-            },
-            {
-                "name": "setPassword",
-                "isAbstract": false,
-                "isPublic": true,
-                "isStatic": false,
-                "arguments": [
-                    {
-                        "type": null
-                    }
-                ],
-                "returnType": null
-            },
-            {
-                "name": "close",
-                "isAbstract": false,
-                "isPublic": true,
-                "isStatic": false,
-                "arguments": [],
-                "returnType": null
-            },
-            {
-                "name": "getStatusString",
-                "isAbstract": false,
-                "isPublic": true,
-                "isStatic": false,
-                "arguments": [],
-                "returnType": null
-            },
-            {
-                "name": "addEmptyDir",
-                "isAbstract": false,
-                "isPublic": true,
-                "isStatic": false,
-                "arguments": [
-                    {
-                        "type": null
-                    }
-                ],
-                "returnType": null
-            },
-            {
-                "name": "addFromString",
-                "isAbstract": false,
-                "isPublic": true,
-                "isStatic": false,
-                "arguments": [
-                    {
-                        "type": null
-                    },
-                    {
-                        "type": null
-                    }
-                ],
-                "returnType": null
-            },
-            {
-                "name": "addFile",
-                "isAbstract": false,
-                "isPublic": true,
-                "isStatic": false,
-                "arguments": [
-                    {
-                        "type": null
-                    },
-                    {
-                        "type": null
-                    },
-                    {
-                        "type": null
-                    },
-                    {
-                        "type": null
-                    }
-                ],
-                "returnType": null
-            },
-            {
-                "name": "addGlob",
-                "isAbstract": false,
-                "isPublic": true,
-                "isStatic": false,
-                "arguments": [
-                    {
-                        "type": null
-                    },
-                    {
-                        "type": null
-                    },
-                    {
-                        "type": null
-                    }
-                ],
-                "returnType": null
-            },
-            {
-                "name": "addPattern",
-                "isAbstract": false,
-                "isPublic": true,
-                "isStatic": false,
-                "arguments": [
-                    {
-                        "type": null
-                    },
-                    {
-                        "type": null
-                    },
-                    {
-                        "type": null
-                    }
-                ],
-                "returnType": null
-            },
-            {
-                "name": "renameIndex",
-                "isAbstract": false,
-                "isPublic": true,
-                "isStatic": false,
-                "arguments": [
-                    {
-                        "type": null
-                    },
-                    {
-                        "type": null
-                    }
-                ],
-                "returnType": null
-            },
-            {
-                "name": "renameName",
-                "isAbstract": false,
-                "isPublic": true,
-                "isStatic": false,
-                "arguments": [
-                    {
-                        "type": null
-                    },
-                    {
-                        "type": null
-                    }
-                ],
-                "returnType": null
-            },
-            {
-                "name": "setArchiveComment",
-                "isAbstract": false,
-                "isPublic": true,
-                "isStatic": false,
-                "arguments": [
-                    {
-                        "type": null
-                    }
-                ],
-                "returnType": null
-            },
-            {
-                "name": "getArchiveComment",
-                "isAbstract": false,
-                "isPublic": true,
-                "isStatic": false,
-                "arguments": [
-                    {
-                        "type": null
-                    }
-                ],
-                "returnType": null
-            },
-            {
-                "name": "setCommentIndex",
-                "isAbstract": false,
-                "isPublic": true,
-                "isStatic": false,
-                "arguments": [
-                    {
-                        "type": null
-                    },
-                    {
-                        "type": null
-                    }
-                ],
-                "returnType": null
-            },
-            {
-                "name": "setCommentName",
-                "isAbstract": false,
-                "isPublic": true,
-                "isStatic": false,
-                "arguments": [
-                    {
-                        "type": null
-                    },
-                    {
-                        "type": null
-                    }
-                ],
-                "returnType": null
-            },
-            {
-                "name": "getCommentIndex",
-                "isAbstract": false,
-                "isPublic": true,
-                "isStatic": false,
-                "arguments": [
-                    {
-                        "type": null
-                    },
-                    {
-                        "type": null
-                    }
-                ],
-                "returnType": null
-            },
-            {
-                "name": "getCommentName",
-                "isAbstract": false,
-                "isPublic": true,
-                "isStatic": false,
-                "arguments": [
-                    {
-                        "type": null
-                    },
-                    {
-                        "type": null
-                    }
-                ],
-                "returnType": null
-            },
-            {
-                "name": "deleteIndex",
-                "isAbstract": false,
-                "isPublic": true,
-                "isStatic": false,
-                "arguments": [
-                    {
-                        "type": null
-                    }
-                ],
-                "returnType": null
-            },
-            {
-                "name": "deleteName",
-                "isAbstract": false,
-                "isPublic": true,
-                "isStatic": false,
-                "arguments": [
-                    {
-                        "type": null
-                    }
-                ],
-                "returnType": null
-            },
-            {
-                "name": "statName",
-                "isAbstract": false,
-                "isPublic": true,
-                "isStatic": false,
-                "arguments": [
-                    {
-                        "type": null
-                    },
-                    {
-                        "type": null
-                    }
-                ],
-                "returnType": null
-            },
-            {
-                "name": "statIndex",
-                "isAbstract": false,
-                "isPublic": true,
-                "isStatic": false,
-                "arguments": [
-                    {
-                        "type": null
-                    },
-                    {
-                        "type": null
-                    }
-                ],
-                "returnType": null
-            },
-            {
-                "name": "locateName",
-                "isAbstract": false,
-                "isPublic": true,
-                "isStatic": false,
-                "arguments": [
-                    {
-                        "type": null
-                    },
-                    {
-                        "type": null
-                    }
-                ],
-                "returnType": null
-            },
-            {
-                "name": "getNameIndex",
-                "isAbstract": false,
-                "isPublic": true,
-                "isStatic": false,
-                "arguments": [
-                    {
-                        "type": null
-                    },
-                    {
-                        "type": null
-                    }
-                ],
-                "returnType": null
-            },
-            {
-                "name": "unchangeArchive",
-                "isAbstract": false,
-                "isPublic": true,
-                "isStatic": false,
-                "arguments": [],
-                "returnType": null
-            },
-            {
-                "name": "unchangeAll",
-                "isAbstract": false,
-                "isPublic": true,
-                "isStatic": false,
-                "arguments": [],
-                "returnType": null
-            },
-            {
-                "name": "unchangeIndex",
-                "isAbstract": false,
-                "isPublic": true,
-                "isStatic": false,
-                "arguments": [
-                    {
-                        "type": null
-                    }
-                ],
-                "returnType": null
-            },
-            {
-                "name": "unchangeName",
-                "isAbstract": false,
-                "isPublic": true,
-                "isStatic": false,
-                "arguments": [
-                    {
-                        "type": null
-                    }
-                ],
-                "returnType": null
-            },
-            {
-                "name": "extractTo",
-                "isAbstract": false,
-                "isPublic": true,
-                "isStatic": false,
-                "arguments": [
-                    {
-                        "type": null
-                    },
-                    {
-                        "type": null
-                    }
-                ],
-                "returnType": null
-            },
-            {
-                "name": "getFromName",
-                "isAbstract": false,
-                "isPublic": true,
-                "isStatic": false,
-                "arguments": [
-                    {
-                        "type": null
-                    },
-                    {
-                        "type": null
-                    },
-                    {
-                        "type": null
-                    }
-                ],
-                "returnType": null
-            },
-            {
-                "name": "getFromIndex",
-                "isAbstract": false,
-                "isPublic": true,
-                "isStatic": false,
-                "arguments": [
-                    {
-                        "type": null
-                    },
-                    {
-                        "type": null
-                    },
-                    {
-                        "type": null
-                    }
-                ],
-                "returnType": null
-            },
-            {
-                "name": "getStream",
-                "isAbstract": false,
-                "isPublic": true,
-                "isStatic": false,
-                "arguments": [
-                    {
-                        "type": null
-                    }
-                ],
-                "returnType": null
-            },
-            {
-                "name": "setExternalAttributesName",
-                "isAbstract": false,
-                "isPublic": true,
-                "isStatic": false,
-                "arguments": [
-                    {
-                        "type": null
-                    },
-                    {
-                        "type": null
-                    },
-                    {
-                        "type": null
-                    },
-                    {
-                        "type": null
-                    }
-                ],
-                "returnType": null
-            },
-            {
-                "name": "setExternalAttributesIndex",
-                "isAbstract": false,
-                "isPublic": true,
-                "isStatic": false,
-                "arguments": [
-                    {
-                        "type": null
-                    },
-                    {
-                        "type": null
-                    },
-                    {
-                        "type": null
-                    },
-                    {
-                        "type": null
-                    }
-                ],
-                "returnType": null
-            },
-            {
-                "name": "getExternalAttributesName",
-                "isAbstract": false,
-                "isPublic": true,
-                "isStatic": false,
-                "arguments": [
-                    {
-                        "type": null
-                    },
-                    {
-                        "type": null
-                    },
-                    {
-                        "type": null
-                    },
-                    {
-                        "type": null
-                    }
-                ],
-                "returnType": null
-            },
-            {
-                "name": "getExternalAttributesIndex",
-                "isAbstract": false,
-                "isPublic": true,
-                "isStatic": false,
-                "arguments": [
-                    {
-                        "type": null
-                    },
-                    {
-                        "type": null
-                    },
-                    {
-                        "type": null
-                    },
-                    {
-                        "type": null
-                    }
-                ],
-                "returnType": null
-            },
-            {
-                "name": "setCompressionName",
-                "isAbstract": false,
-                "isPublic": true,
-                "isStatic": false,
-                "arguments": [
-                    {
-                        "type": null
-                    },
-                    {
-                        "type": null
-                    },
-                    {
-                        "type": null
-                    }
-                ],
-                "returnType": null
-            },
-            {
-                "name": "setCompressionIndex",
-                "isAbstract": false,
-                "isPublic": true,
-                "isStatic": false,
-                "arguments": [
-                    {
-                        "type": null
-                    },
-                    {
-                        "type": null
-                    },
-                    {
-                        "type": null
-                    }
-                ],
-                "returnType": null
-            }
-        ],
-        "properties": [],
-        "interfaces": [],
-        "parentClass": null
-    },
     "__PHP_Incomplete_Class": {
         "constants": [],
         "methods": [],
@@ -30384,7 +29885,11 @@
                 "isAbstract": false,
                 "isPublic": true,
                 "isStatic": false,
-                "arguments": [],
+                "arguments": [
+                    {
+                        "type": null
+                    }
+                ],
                 "returnType": null
             },
             {
@@ -30400,7 +29905,20 @@
                 "isAbstract": false,
                 "isPublic": true,
                 "isStatic": false,
-                "arguments": [],
+                "arguments": [
+                    {
+                        "type": null
+                    },
+                    {
+                        "type": null
+                    },
+                    {
+                        "type": null
+                    },
+                    {
+                        "type": null
+                    }
+                ],
                 "returnType": null
             },
             {
@@ -30408,7 +29926,17 @@
                 "isAbstract": false,
                 "isPublic": true,
                 "isStatic": false,
-                "arguments": [],
+                "arguments": [
+                    {
+                        "type": null
+                    },
+                    {
+                        "type": null
+                    },
+                    {
+                        "type": null
+                    }
+                ],
                 "returnType": null
             },
             {
@@ -30416,7 +29944,17 @@
                 "isAbstract": false,
                 "isPublic": true,
                 "isStatic": false,
-                "arguments": [],
+                "arguments": [
+                    {
+                        "type": null
+                    },
+                    {
+                        "type": null
+                    },
+                    {
+                        "type": null
+                    }
+                ],
                 "returnType": null
             },
             {
@@ -30424,7 +29962,20 @@
                 "isAbstract": false,
                 "isPublic": true,
                 "isStatic": false,
-                "arguments": [],
+                "arguments": [
+                    {
+                        "type": null
+                    },
+                    {
+                        "type": null
+                    },
+                    {
+                        "type": null
+                    },
+                    {
+                        "type": null
+                    }
+                ],
                 "returnType": null
             },
             {
@@ -30472,7 +30023,11 @@
                 "isAbstract": false,
                 "isPublic": true,
                 "isStatic": false,
-                "arguments": [],
+                "arguments": [
+                    {
+                        "type": null
+                    }
+                ],
                 "returnType": null
             },
             {
@@ -30528,7 +30083,20 @@
                 "isAbstract": false,
                 "isPublic": true,
                 "isStatic": false,
-                "arguments": [],
+                "arguments": [
+                    {
+                        "type": null
+                    },
+                    {
+                        "type": null
+                    },
+                    {
+                        "type": null
+                    },
+                    {
+                        "type": null
+                    }
+                ],
                 "returnType": null
             }
         ],

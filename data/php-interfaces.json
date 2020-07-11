@@ -75,7 +75,73 @@
         "parentClass": null
     },
     "DateTimeInterface": {
-        "constants": [],
+        "constants": [
+            {
+                "name": "ATOM",
+                "isPublic": true,
+                "value": "Y-m-d\\TH:i:sP"
+            },
+            {
+                "name": "COOKIE",
+                "isPublic": true,
+                "value": "l, d-M-Y H:i:s T"
+            },
+            {
+                "name": "ISO8601",
+                "isPublic": true,
+                "value": "Y-m-d\\TH:i:sO"
+            },
+            {
+                "name": "RFC822",
+                "isPublic": true,
+                "value": "D, d M y H:i:s O"
+            },
+            {
+                "name": "RFC850",
+                "isPublic": true,
+                "value": "l, d-M-y H:i:s T"
+            },
+            {
+                "name": "RFC1036",
+                "isPublic": true,
+                "value": "D, d M y H:i:s O"
+            },
+            {
+                "name": "RFC1123",
+                "isPublic": true,
+                "value": "D, d M Y H:i:s O"
+            },
+            {
+                "name": "RFC7231",
+                "isPublic": true,
+                "value": "D, d M Y H:i:s \\G\\M\\T"
+            },
+            {
+                "name": "RFC2822",
+                "isPublic": true,
+                "value": "D, d M Y H:i:s O"
+            },
+            {
+                "name": "RFC3339",
+                "isPublic": true,
+                "value": "Y-m-d\\TH:i:sP"
+            },
+            {
+                "name": "RFC3339_EXTENDED",
+                "isPublic": true,
+                "value": "Y-m-d\\TH:i:s.vP"
+            },
+            {
+                "name": "RSS",
+                "isPublic": true,
+                "value": "D, d M Y H:i:s O"
+            },
+            {
+                "name": "W3C",
+                "isPublic": true,
+                "value": "Y-m-d\\TH:i:sP"
+            }
+        ],
         "methods": [
             {
                 "name": "format",

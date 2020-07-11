@@ -307,6 +307,22 @@
             }
         ]
     },
+    "array_key_first": {
+        "arguments": [
+            {
+                "optional": false,
+                "pbr": false
+            }
+        ]
+    },
+    "array_key_last": {
+        "arguments": [
+            {
+                "optional": false,
+                "pbr": false
+            }
+        ]
+    },
     "array_keys": {
         "arguments": [
             {
@@ -418,7 +434,7 @@
                 "pbr": true
             },
             {
-                "optional": false,
+                "optional": true,
                 "pbr": false
             }
         ]
@@ -682,7 +698,7 @@
                 "pbr": true
             },
             {
-                "optional": false,
+                "optional": true,
                 "pbr": false
             }
         ]
@@ -924,6 +940,10 @@
             {
                 "optional": false,
                 "pbr": false
+            },
+            {
+                "optional": true,
+                "pbr": false
             }
         ]
     },
@@ -982,7 +1002,7 @@
     "bcscale": {
         "arguments": [
             {
-                "optional": false,
+                "optional": true,
                 "pbr": false
             }
         ]
@@ -1054,7 +1074,7 @@
                 "pbr": false
             },
             {
-                "optional": false,
+                "optional": true,
                 "pbr": false
             },
             {
@@ -3686,6 +3706,26 @@
             }
         ]
     },
+    "ftp_append": {
+        "arguments": [
+            {
+                "optional": false,
+                "pbr": false
+            },
+            {
+                "optional": false,
+                "pbr": false
+            },
+            {
+                "optional": false,
+                "pbr": false
+            },
+            {
+                "optional": true,
+                "pbr": false
+            }
+        ]
+    },
     "ftp_cdup": {
         "arguments": [
             {
@@ -3785,7 +3825,7 @@
                 "pbr": false
             },
             {
-                "optional": false,
+                "optional": true,
                 "pbr": false
             },
             {
@@ -3809,7 +3849,7 @@
                 "pbr": false
             },
             {
-                "optional": false,
+                "optional": true,
                 "pbr": false
             },
             {
@@ -3833,7 +3873,7 @@
                 "pbr": false
             },
             {
-                "optional": false,
+                "optional": true,
                 "pbr": false
             },
             {
@@ -3894,6 +3934,18 @@
             }
         ]
     },
+    "ftp_mlsd": {
+        "arguments": [
+            {
+                "optional": false,
+                "pbr": false
+            },
+            {
+                "optional": false,
+                "pbr": false
+            }
+        ]
+    },
     "ftp_nb_continue": {
         "arguments": [
             {
@@ -3917,7 +3969,7 @@
                 "pbr": false
             },
             {
-                "optional": false,
+                "optional": true,
                 "pbr": false
             },
             {
@@ -3941,7 +3993,7 @@
                 "pbr": false
             },
             {
-                "optional": false,
+                "optional": true,
                 "pbr": false
             },
             {
@@ -3965,7 +4017,7 @@
                 "pbr": false
             },
             {
-                "optional": false,
+                "optional": true,
                 "pbr": false
             },
             {
@@ -3989,7 +4041,7 @@
                 "pbr": false
             },
             {
-                "optional": false,
+                "optional": true,
                 "pbr": false
             },
             {
@@ -4037,7 +4089,7 @@
                 "pbr": false
             },
             {
-                "optional": false,
+                "optional": true,
                 "pbr": false
             },
             {
@@ -4245,6 +4297,9 @@
         "arguments": []
     },
     "gc_mem_caches": {
+        "arguments": []
+    },
+    "gc_status": {
         "arguments": []
     },
     "gd_info": {
@@ -5062,6 +5117,9 @@
             }
         ]
     },
+    "hash_hmac_algos": {
+        "arguments": []
+    },
     "hash_hmac_file": {
         "arguments": [
             {
@@ -5277,6 +5335,14 @@
             },
             {
                 "optional": true,
+                "pbr": false
+            }
+        ]
+    },
+    "hrtime": {
+        "arguments": [
+            {
+                "optional": false,
                 "pbr": false
             }
         ]
@@ -5693,6 +5759,22 @@
             },
             {
                 "optional": false,
+                "pbr": false
+            }
+        ]
+    },
+    "imagebmp": {
+        "arguments": [
+            {
+                "optional": false,
+                "pbr": false
+            },
+            {
+                "optional": true,
+                "pbr": false
+            },
+            {
+                "optional": true,
                 "pbr": false
             }
         ]
@@ -6285,6 +6367,14 @@
             }
         ]
     },
+    "imagecreatefrombmp": {
+        "arguments": [
+            {
+                "optional": false,
+                "pbr": false
+            }
+        ]
+    },
     "imagecreatefromgd": {
         "arguments": [
             {
@@ -6745,6 +6835,14 @@
             }
         ]
     },
+    "imagegetclip": {
+        "arguments": [
+            {
+                "optional": false,
+                "pbr": false
+            }
+        ]
+    },
     "imagegif": {
         "arguments": [
             {
@@ -6841,6 +6939,26 @@
             }
         ]
     },
+    "imageopenpolygon": {
+        "arguments": [
+            {
+                "optional": false,
+                "pbr": false
+            },
+            {
+                "optional": false,
+                "pbr": false
+            },
+            {
+                "optional": false,
+                "pbr": false
+            },
+            {
+                "optional": false,
+                "pbr": false
+            }
+        ]
+    },
     "imagepalettecopy": {
         "arguments": [
             {
@@ -6929,6 +7047,22 @@
             }
         ]
     },
+    "imageresolution": {
+        "arguments": [
+            {
+                "optional": false,
+                "pbr": false
+            },
+            {
+                "optional": true,
+                "pbr": false
+            },
+            {
+                "optional": true,
+                "pbr": false
+            }
+        ]
+    },
     "imagerotate": {
         "arguments": [
             {
@@ -6983,6 +7117,30 @@
     },
     "imagesetbrush": {
         "arguments": [
+            {
+                "optional": false,
+                "pbr": false
+            },
+            {
+                "optional": false,
+                "pbr": false
+            }
+        ]
+    },
+    "imagesetclip": {
+        "arguments": [
+            {
+                "optional": false,
+                "pbr": false
+            },
+            {
+                "optional": false,
+                "pbr": false
+            },
+            {
+                "optional": false,
+                "pbr": false
+            },
             {
                 "optional": false,
                 "pbr": false
@@ -7244,6 +7402,22 @@
             }
         ]
     },
+    "inflate_get_read_len": {
+        "arguments": [
+            {
+                "optional": false,
+                "pbr": false
+            }
+        ]
+    },
+    "inflate_get_status": {
+        "arguments": [
+            {
+                "optional": false,
+                "pbr": false
+            }
+        ]
+    },
     "inflate_init": {
         "arguments": [
             {
@@ -7421,6 +7595,14 @@
             {
                 "optional": true,
                 "pbr": true
+            }
+        ]
+    },
+    "is_countable": {
+        "arguments": [
+            {
+                "optional": false,
+                "pbr": false
             }
         ]
     },
@@ -7950,6 +8132,30 @@
             {
                 "optional": false,
                 "pbr": false
+            },
+            {
+                "optional": true,
+                "pbr": false
+            }
+        ]
+    },
+    "ldap_add_ext": {
+        "arguments": [
+            {
+                "optional": false,
+                "pbr": false
+            },
+            {
+                "optional": false,
+                "pbr": false
+            },
+            {
+                "optional": false,
+                "pbr": false
+            },
+            {
+                "optional": true,
+                "pbr": false
             }
         ]
     },
@@ -7957,6 +8163,26 @@
         "arguments": [
             {
                 "optional": false,
+                "pbr": false
+            },
+            {
+                "optional": true,
+                "pbr": false
+            },
+            {
+                "optional": true,
+                "pbr": false
+            }
+        ]
+    },
+    "ldap_bind_ext": {
+        "arguments": [
+            {
+                "optional": false,
+                "pbr": false
+            },
+            {
+                "optional": true,
                 "pbr": false
             },
             {
@@ -7993,6 +8219,10 @@
             },
             {
                 "optional": false,
+                "pbr": false
+            },
+            {
+                "optional": true,
                 "pbr": false
             }
         ]
@@ -8070,6 +8300,26 @@
             {
                 "optional": false,
                 "pbr": false
+            },
+            {
+                "optional": true,
+                "pbr": false
+            }
+        ]
+    },
+    "ldap_delete_ext": {
+        "arguments": [
+            {
+                "optional": false,
+                "pbr": false
+            },
+            {
+                "optional": false,
+                "pbr": false
+            },
+            {
+                "optional": true,
+                "pbr": false
             }
         ]
     },
@@ -8117,6 +8367,66 @@
             },
             {
                 "optional": true,
+                "pbr": false
+            }
+        ]
+    },
+    "ldap_exop": {
+        "arguments": [
+            {
+                "optional": false,
+                "pbr": false
+            },
+            {
+                "optional": false,
+                "pbr": false
+            },
+            {
+                "optional": true,
+                "pbr": false
+            },
+            {
+                "optional": true,
+                "pbr": false
+            },
+            {
+                "optional": true,
+                "pbr": true
+            },
+            {
+                "optional": true,
+                "pbr": true
+            }
+        ]
+    },
+    "ldap_exop_passwd": {
+        "arguments": [
+            {
+                "optional": false,
+                "pbr": false
+            },
+            {
+                "optional": true,
+                "pbr": false
+            },
+            {
+                "optional": true,
+                "pbr": false
+            },
+            {
+                "optional": true,
+                "pbr": false
+            },
+            {
+                "optional": true,
+                "pbr": true
+            }
+        ]
+    },
+    "ldap_exop_whoami": {
+        "arguments": [
+            {
+                "optional": false,
                 "pbr": false
             }
         ]
@@ -8294,6 +8604,10 @@
             {
                 "optional": true,
                 "pbr": false
+            },
+            {
+                "optional": true,
+                "pbr": false
             }
         ]
     },
@@ -8309,6 +8623,30 @@
             },
             {
                 "optional": false,
+                "pbr": false
+            },
+            {
+                "optional": true,
+                "pbr": false
+            }
+        ]
+    },
+    "ldap_mod_add_ext": {
+        "arguments": [
+            {
+                "optional": false,
+                "pbr": false
+            },
+            {
+                "optional": false,
+                "pbr": false
+            },
+            {
+                "optional": false,
+                "pbr": false
+            },
+            {
+                "optional": true,
                 "pbr": false
             }
         ]
@@ -8326,6 +8664,30 @@
             {
                 "optional": false,
                 "pbr": false
+            },
+            {
+                "optional": true,
+                "pbr": false
+            }
+        ]
+    },
+    "ldap_mod_del_ext": {
+        "arguments": [
+            {
+                "optional": false,
+                "pbr": false
+            },
+            {
+                "optional": false,
+                "pbr": false
+            },
+            {
+                "optional": false,
+                "pbr": false
+            },
+            {
+                "optional": true,
+                "pbr": false
             }
         ]
     },
@@ -8341,6 +8703,30 @@
             },
             {
                 "optional": false,
+                "pbr": false
+            },
+            {
+                "optional": true,
+                "pbr": false
+            }
+        ]
+    },
+    "ldap_mod_replace_ext": {
+        "arguments": [
+            {
+                "optional": false,
+                "pbr": false
+            },
+            {
+                "optional": false,
+                "pbr": false
+            },
+            {
+                "optional": false,
+                "pbr": false
+            },
+            {
+                "optional": true,
                 "pbr": false
             }
         ]
@@ -8358,6 +8744,10 @@
             {
                 "optional": false,
                 "pbr": false
+            },
+            {
+                "optional": true,
+                "pbr": false
             }
         ]
     },
@@ -8373,6 +8763,10 @@
             },
             {
                 "optional": false,
+                "pbr": false
+            },
+            {
+                "optional": true,
                 "pbr": false
             }
         ]
@@ -8413,6 +8807,26 @@
             }
         ]
     },
+    "ldap_parse_exop": {
+        "arguments": [
+            {
+                "optional": false,
+                "pbr": false
+            },
+            {
+                "optional": false,
+                "pbr": false
+            },
+            {
+                "optional": false,
+                "pbr": true
+            },
+            {
+                "optional": false,
+                "pbr": true
+            }
+        ]
+    },
     "ldap_parse_reference": {
         "arguments": [
             {
@@ -8441,6 +8855,10 @@
             },
             {
                 "optional": false,
+                "pbr": true
+            },
+            {
+                "optional": true,
                 "pbr": true
             },
             {
@@ -8490,6 +8908,10 @@
             {
                 "optional": true,
                 "pbr": false
+            },
+            {
+                "optional": true,
+                "pbr": false
             }
         ]
     },
@@ -8513,6 +8935,38 @@
             },
             {
                 "optional": false,
+                "pbr": false
+            },
+            {
+                "optional": true,
+                "pbr": false
+            }
+        ]
+    },
+    "ldap_rename_ext": {
+        "arguments": [
+            {
+                "optional": false,
+                "pbr": false
+            },
+            {
+                "optional": false,
+                "pbr": false
+            },
+            {
+                "optional": false,
+                "pbr": false
+            },
+            {
+                "optional": false,
+                "pbr": false
+            },
+            {
+                "optional": false,
+                "pbr": false
+            },
+            {
+                "optional": true,
                 "pbr": false
             }
         ]
@@ -8561,6 +9015,10 @@
             },
             {
                 "optional": false,
+                "pbr": false
+            },
+            {
+                "optional": true,
                 "pbr": false
             },
             {
@@ -8845,6 +9303,18 @@
             }
         ]
     },
+    "mb_chr": {
+        "arguments": [
+            {
+                "optional": false,
+                "pbr": false
+            },
+            {
+                "optional": true,
+                "pbr": false
+            }
+        ]
+    },
     "mb_convert_case": {
         "arguments": [
             {
@@ -8925,6 +9395,10 @@
             },
             {
                 "optional": false,
+                "pbr": false
+            },
+            {
+                "optional": true,
                 "pbr": false
             },
             {
@@ -9226,6 +9700,18 @@
     "mb_list_encodings": {
         "arguments": []
     },
+    "mb_ord": {
+        "arguments": [
+            {
+                "optional": false,
+                "pbr": false
+            },
+            {
+                "optional": true,
+                "pbr": false
+            }
+        ]
+    },
     "mb_output_handler": {
         "arguments": [
             {
@@ -9268,6 +9754,18 @@
     },
     "mb_regex_set_options": {
         "arguments": [
+            {
+                "optional": true,
+                "pbr": false
+            }
+        ]
+    },
+    "mb_scrub": {
+        "arguments": [
+            {
+                "optional": false,
+                "pbr": false
+            },
             {
                 "optional": true,
                 "pbr": false
@@ -10422,12 +10920,7 @@
         ]
     },
     "mysqli_get_client_info": {
-        "arguments": [
-            {
-                "optional": false,
-                "pbr": false
-            }
-        ]
+        "arguments": []
     },
     "mysqli_get_client_stats": {
         "arguments": []
@@ -11160,6 +11653,9 @@
             }
         ]
     },
+    "net_get_interfaces": {
+        "arguments": []
+    },
     "next": {
         "arguments": [
             {
@@ -11289,6 +11785,48 @@
                 "pbr": false
             }
         ]
+    },
+    "opcache_compile_file": {
+        "arguments": [
+            {
+                "optional": false,
+                "pbr": false
+            }
+        ]
+    },
+    "opcache_get_configuration": {
+        "arguments": []
+    },
+    "opcache_get_status": {
+        "arguments": [
+            {
+                "optional": true,
+                "pbr": false
+            }
+        ]
+    },
+    "opcache_invalidate": {
+        "arguments": [
+            {
+                "optional": false,
+                "pbr": false
+            },
+            {
+                "optional": true,
+                "pbr": false
+            }
+        ]
+    },
+    "opcache_is_script_cached": {
+        "arguments": [
+            {
+                "optional": false,
+                "pbr": false
+            }
+        ]
+    },
+    "opcache_reset": {
+        "arguments": []
     },
     "opendir": {
         "arguments": [
@@ -11743,6 +12281,18 @@
             }
         ]
     },
+    "openssl_pkcs7_read": {
+        "arguments": [
+            {
+                "optional": false,
+                "pbr": false
+            },
+            {
+                "optional": false,
+                "pbr": true
+            }
+        ]
+    },
     "openssl_pkcs7_sign": {
         "arguments": [
             {
@@ -11795,6 +12345,26 @@
             },
             {
                 "optional": true,
+                "pbr": false
+            },
+            {
+                "optional": true,
+                "pbr": false
+            },
+            {
+                "optional": true,
+                "pbr": false
+            }
+        ]
+    },
+    "openssl_pkey_derive": {
+        "arguments": [
+            {
+                "optional": false,
+                "pbr": false
+            },
+            {
+                "optional": false,
                 "pbr": false
             },
             {
@@ -16133,6 +16703,46 @@
             }
         ]
     },
+    "socket_addrinfo_bind": {
+        "arguments": [
+            {
+                "optional": false,
+                "pbr": false
+            }
+        ]
+    },
+    "socket_addrinfo_connect": {
+        "arguments": [
+            {
+                "optional": false,
+                "pbr": false
+            }
+        ]
+    },
+    "socket_addrinfo_explain": {
+        "arguments": [
+            {
+                "optional": false,
+                "pbr": false
+            }
+        ]
+    },
+    "socket_addrinfo_lookup": {
+        "arguments": [
+            {
+                "optional": false,
+                "pbr": false
+            },
+            {
+                "optional": true,
+                "pbr": false
+            },
+            {
+                "optional": true,
+                "pbr": false
+            }
+        ]
+    },
     "socket_bind": {
         "arguments": [
             {
@@ -16723,6 +17333,14 @@
             }
         ]
     },
+    "spl_object_id": {
+        "arguments": [
+            {
+                "optional": false,
+                "pbr": false
+            }
+        ]
+    },
     "sprintf": {
         "arguments": [
             {
@@ -17237,6 +17855,14 @@
         "arguments": []
     },
     "stream_is_local": {
+        "arguments": [
+            {
+                "optional": false,
+                "pbr": false
+            }
+        ]
+    },
+    "stream_isatty": {
         "arguments": [
             {
                 "optional": false,
@@ -18043,19 +18669,44 @@
         ]
     },
     "tidy_access_count": {
-        "arguments": []
+        "arguments": [
+            {
+                "optional": false,
+                "pbr": false
+            }
+        ]
     },
     "tidy_clean_repair": {
-        "arguments": []
+        "arguments": [
+            {
+                "optional": false,
+                "pbr": false
+            }
+        ]
     },
     "tidy_config_count": {
-        "arguments": []
+        "arguments": [
+            {
+                "optional": false,
+                "pbr": false
+            }
+        ]
     },
     "tidy_diagnose": {
-        "arguments": []
+        "arguments": [
+            {
+                "optional": false,
+                "pbr": false
+            }
+        ]
     },
     "tidy_error_count": {
-        "arguments": []
+        "arguments": [
+            {
+                "optional": false,
+                "pbr": false
+            }
+        ]
     },
     "tidy_get_body": {
         "arguments": [
@@ -18066,10 +18717,20 @@
         ]
     },
     "tidy_get_config": {
-        "arguments": []
+        "arguments": [
+            {
+                "optional": false,
+                "pbr": false
+            }
+        ]
     },
     "tidy_get_error_buffer": {
-        "arguments": []
+        "arguments": [
+            {
+                "optional": false,
+                "pbr": false
+            }
+        ]
     },
     "tidy_get_head": {
         "arguments": []
@@ -18078,7 +18739,12 @@
         "arguments": []
     },
     "tidy_get_html_ver": {
-        "arguments": []
+        "arguments": [
+            {
+                "optional": false,
+                "pbr": false
+            }
+        ]
     },
     "tidy_get_opt_doc": {
         "arguments": [
@@ -18093,7 +18759,12 @@
         ]
     },
     "tidy_get_output": {
-        "arguments": []
+        "arguments": [
+            {
+                "optional": false,
+                "pbr": false
+            }
+        ]
     },
     "tidy_get_release": {
         "arguments": []
@@ -18102,7 +18773,12 @@
         "arguments": []
     },
     "tidy_get_status": {
-        "arguments": []
+        "arguments": [
+            {
+                "optional": false,
+                "pbr": false
+            }
+        ]
     },
     "tidy_getopt": {
         "arguments": [
@@ -18113,10 +18789,20 @@
         ]
     },
     "tidy_is_xhtml": {
-        "arguments": []
+        "arguments": [
+            {
+                "optional": false,
+                "pbr": false
+            }
+        ]
     },
     "tidy_is_xml": {
-        "arguments": []
+        "arguments": [
+            {
+                "optional": false,
+                "pbr": false
+            }
+        ]
     },
     "tidy_parse_file": {
         "arguments": [
@@ -18191,7 +18877,12 @@
         ]
     },
     "tidy_warning_count": {
-        "arguments": []
+        "arguments": [
+            {
+                "optional": false,
+                "pbr": false
+            }
+        ]
     },
     "time": {
         "arguments": []
@@ -19673,98 +20364,6 @@
     },
     "zend_version": {
         "arguments": []
-    },
-    "zip_close": {
-        "arguments": [
-            {
-                "optional": false,
-                "pbr": false
-            }
-        ]
-    },
-    "zip_entry_close": {
-        "arguments": [
-            {
-                "optional": false,
-                "pbr": false
-            }
-        ]
-    },
-    "zip_entry_compressedsize": {
-        "arguments": [
-            {
-                "optional": false,
-                "pbr": false
-            }
-        ]
-    },
-    "zip_entry_compressionmethod": {
-        "arguments": [
-            {
-                "optional": false,
-                "pbr": false
-            }
-        ]
-    },
-    "zip_entry_filesize": {
-        "arguments": [
-            {
-                "optional": false,
-                "pbr": false
-            }
-        ]
-    },
-    "zip_entry_name": {
-        "arguments": [
-            {
-                "optional": false,
-                "pbr": false
-            }
-        ]
-    },
-    "zip_entry_open": {
-        "arguments": [
-            {
-                "optional": false,
-                "pbr": false
-            },
-            {
-                "optional": false,
-                "pbr": false
-            },
-            {
-                "optional": true,
-                "pbr": false
-            }
-        ]
-    },
-    "zip_entry_read": {
-        "arguments": [
-            {
-                "optional": false,
-                "pbr": false
-            },
-            {
-                "optional": true,
-                "pbr": false
-            }
-        ]
-    },
-    "zip_open": {
-        "arguments": [
-            {
-                "optional": false,
-                "pbr": false
-            }
-        ]
-    },
-    "zip_read": {
-        "arguments": [
-            {
-                "optional": false,
-                "pbr": false
-            }
-        ]
     },
     "zlib_decode": {
         "arguments": [
