@@ -23,6 +23,7 @@
     "eximport": "^2.0.0"
   },
   "devDependencies": {
-    "getopts": "^2.2.5"
+    "getopts": "^2.2.5",
+    "node-html-parser": "^1.2.20"
   }
 }
